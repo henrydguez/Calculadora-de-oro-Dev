@@ -25,6 +25,8 @@ $('clearBtn').addEventListener('click',clearAll);
 $('saveConfig').addEventListener('click',()=>{const max=n($('cfgMax').value)||defaults.max;let green=n($('cfgGreenEnd').value)||defaults.greenEnd;let yellow=n($('cfgYellowEnd').value)||defaults.yellowEnd;let orange=n($('cfgOrangeEnd').value)||defaults.orangeEnd;green=Math.min(Math.max(1,green),max);yellow=Math.min(Math.max(green,yellow),max);orange=Math.min(Math.max(yellow,orange),max);config={max,pawn1:n($('cfgPawn1').value)||defaults.pawn1,pawn2:n($('cfgPawn2').value)||defaults.pawn2,offers:[1,2,3,4].map(i=>n($(`cfgOffer${i}`).value)||defaults.offers[i-1]),greenEnd:green,yellowEnd:yellow,orangeEnd:orange};localStorage.setItem('goldConfig',JSON.stringify(config));loadConfig();calculate();alert('Configuración guardada')});
 const bottomNav=document.querySelector('.bottom-nav');
 if(bottomNav)bottomNav.addEventListener('click',e=>{const btn=e.target.closest('.nav-item');if(btn&&bottomNav.contains(btn)){e.preventDefault();e.stopPropagation();toggleView(btn.dataset.view)}},false);
+const settingsBtn=$('settingsBtn');
+if(settingsBtn)settingsBtn.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();toggleView('configuracion')},false);
 ['pawnGrams','pawnMinRate','pawnMaxRate'].forEach(id=>$(id).addEventListener('input',renderPawn));
 const themeBtn=$('themeBtn');
 if(themeBtn)themeBtn.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();toggleTheme()},false);
