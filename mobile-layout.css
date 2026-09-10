@@ -31,5 +31,6 @@
 #empenos .pawn-column input{font-size:19px}
 #empenos .pawn-total span{font-size:12px}
 #empenos .pawn-total strong{font-size:21px}
+#empenos .pawn-column input[readonly]{opacity:.72;cursor:not-allowed;background:var(--card)}
 .bottom-nav{grid-template-columns:repeat(3,1fr)}
 @media(min-width:600px){#valoracion,#compra,#empenos{width:calc(100% + 32px);margin-left:-16px;padding-left:16px;padding-right:16px}}
