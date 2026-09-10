@@ -32,5 +32,27 @@
 #empenos .pawn-total span{font-size:12px}
 #empenos .pawn-total strong{font-size:21px}
 #empenos .pawn-column input[readonly]{opacity:.72;cursor:not-allowed;background:var(--card)}
+
+/* Configuración compacta: todos los bloques quedan visibles junto al Aviso legal. */
+#configuracion .page-heading{margin:2px 0 6px}
+#configuracion .page-heading h2{font-size:20px;margin-bottom:2px}
+#configuracion .page-heading p{font-size:10px;line-height:1.2}
+#configuracion .form-card{gap:5px;padding:5px;margin-bottom:5px}
+#configuracion .config-group{gap:5px 7px;padding:6px;border-radius:10px}
+#configuracion .config-group h3{font-size:10px;padding:0 2px 3px}
+#configuracion .config-group label{gap:2px;font-size:8px;padding:5px 7px;border-radius:8px}
+#configuracion .config-group input{padding:4px 6px;border-radius:6px;font-size:13px;height:28px}
+#configuracion .config-offers{transform:none}
+#configuracion .config-colors{grid-template-columns:repeat(3,1fr)}
+#configuracion .primary-btn{margin-top:0;padding:6px;font-size:12px;min-height:32px}
+#configuracion .legal-card{border-radius:10px}
+#configuracion .legal-summary{padding:7px 9px;gap:7px}
+#configuracion .legal-icon{width:22px;height:22px;font-size:13px}
+#configuracion .legal-summary strong{font-size:12px}
+#configuracion .legal-summary small{font-size:9px}
+#configuracion .legal-chevron{font-size:16px}
+#configuracion{height:calc(100dvh - 130px);min-height:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;touch-action:pan-y;padding-bottom:16px}
+#configuracion .legal-card[open] .legal-content{padding-bottom:24px}
+
 .bottom-nav{grid-template-columns:repeat(3,1fr)}
 @media(min-width:600px){#valoracion,#compra,#empenos{width:calc(100% + 32px);margin-left:-16px;padding-left:16px;padding-right:16px}}
