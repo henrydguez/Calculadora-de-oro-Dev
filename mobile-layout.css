@@ -1,0 +1,35 @@
+/* Ajuste móvil: Valoración, Compra y Empeño ocupan todo el ancho visible y usan tipografía más legible. */
+#valoracion,#compra,#empenos{width:calc(100% + 24px);margin-left:-12px;padding-left:12px;padding-right:12px}
+#valoracion .section-title h2,#compra .page-heading h2,#empenos .page-heading h2{font-size:23px}
+#valoracion .hero-card strong{font-size:23px}
+#valoracion .hero-card span,.card span,.offer-list span{font-size:12px}
+#valoracion .hero-card small{font-size:11px}
+#valoracion .karat-card label{font-size:15px}
+#valoracion .karat-card input{font-size:24px}
+#valoracion .karat-card em{font-size:11px}
+#valoracion .card h3{font-size:16px}
+#valoracion .card-head strong,#valoracion .card-head span{font-size:16px}
+#valoracion .range-labels{font-size:11px}
+#valoracion .range-legend{font-size:10px}
+#valoracion .summary-card span{font-size:12px}
+#valoracion .summary-card strong{font-size:19px}
+#compra .page-heading span,#empenos .page-heading span{font-size:12px}
+#compra .page-heading p,#empenos .page-heading p{font-size:13px;line-height:1.4}
+#compra>.card{min-height:56px}
+#compra>.card .card-head strong,#compra>.card .card-head h3{font-size:16px}
+#compra .offer .rate{font-size:15px}
+#compra .offer .amount{font-size:18px}
+#compra .offer span{font-size:12px}
+#compra .accent-card span{font-size:12px}
+#compra .accent-card strong{font-size:25px}
+#compra .accent-card small{font-size:11px}
+#empenos .pawn-weight-card label{font-size:14px}
+#empenos .pawn-grams input{font-size:22px}
+#empenos .pawn-grams span{font-size:14px}
+#empenos .pawn-column h3{font-size:16px}
+#empenos .pawn-column label{font-size:12px}
+#empenos .pawn-column input{font-size:19px}
+#empenos .pawn-total span{font-size:12px}
+#empenos .pawn-total strong{font-size:21px}
+.bottom-nav{grid-template-columns:repeat(3,1fr)}
+@media(min-width:600px){#valoracion,#compra,#empenos{width:calc(100% + 32px);margin-left:-16px;padding-left:16px;padding-right:16px}}
